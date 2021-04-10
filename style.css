@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+}
+
+/*========== BASE ==========*/
+*, body,
+::before,
+::after {
+  box-sizing: border-box;
+}
+nav{
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul.nav-items{
+    display: flex;
+    justify-content: end;
+}
+
+
+ul.nav-items li{
+    padding-right: 1em;
+    font-size: 14px;
+    list-style: none;
+
+}
+ 
+ul.nav-items a{
+    text-decoration: none;
+    color: black;
+}
+
+ul.nav-items a:hover{
+ text-decoration: underline;
+}
+
+
