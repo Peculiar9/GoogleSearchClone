@@ -27,7 +27,7 @@ ul.nav-items li{
     padding-right: 1em;
     font-size: 14px;
     list-style: none;
-
+    color: rgba(0,0,0,0.87);;
 }
  
 ul.nav-items a{
@@ -67,7 +67,7 @@ ul.nav-items a:hover{
     border-radius: 3rem;
 }
 input.text-input{
-    width: 80%;
+    width: 70%;
 }
 
 .body > .search-bar:hover{
@@ -83,7 +83,7 @@ input.text-input, button{
     border: none;
     background: transparent;
 }
-input.text-input, button > i{ font-size: 1.4em;}
+input.text-input, button > i{ font-size: 1.3em; color: rgb(141, 141, 141);}
 
 .util-buttons > input{
     border: none;
@@ -97,7 +97,11 @@ input.text-input, button > i{ font-size: 1.4em;}
 }
 .util-buttons > input:hover{
     border: 1px solid #dadce0;
+    box-shadow: 0px 4px 2px 0px rgba(227,227,227,0.75);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(227,227,227,0.75);
+    -moz-box-shadow: 0px 4px 2px 0px rgba(227,227,227,0.75);
 }
+
 
 
 .body > .util-buttons{
@@ -137,6 +141,15 @@ p.description {
     .body > .search-bar{
         min-width: 90vh;
     }
+    .footer-bottom{
+        flex-direction: column-reverse;
+    }
+
+.links{
+ flex-direction: column;
+ text-align: center;
+ justify-items: center;
+}
 }
 
 
@@ -169,9 +182,9 @@ footer > .footer-top{
 footer > .footer-bottom{
     display: flex;
     width: 100%;
+    margin: 0 1em;
     height: auto;
     align-items: center;
-
     padding: 1em;
     justify-content: space-between;
 }
@@ -192,31 +205,32 @@ footer > .footer-bottom ul > li > a:hover{
     text-decoration: underline;
 
 }
-
-.carbon-img{
-   
+.footer-description{
+    align-items: center;
+    display: flex;
+    width: 30%;
+    /* order: 1; */
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
 }
 .footer-description a:hover{
     text-decoration: underline;
 }
 
 .footer-description a{
-    vertical-align: top;
+   
     text-decoration: none;
     color: inherit;
     font: 14px;
 }
 
 .footer-description img{
-    margin-right: 1em;
+    margin-right: .72em;
     height: 20px;
 }
 
-.footer-description{
-    align-items: center;
-    display: flex;
-    flex-wrap: nowrap;
-}
+
 .mic{
     height: 24px;
     width: 24px;
@@ -224,10 +238,35 @@ footer > .footer-bottom ul > li > a:hover{
     cursor: pointer;
 }
 
+.text-input:focus ~ i.cancel{
+   display: block;
+   cursor: pointer;
+   color: #3c4043;
+}
 i.cancel{
-   display: none;
+    display: none;
+ }
+
+
+.links{
+    display: flex;
+    width: 100vw;
+    /* align-items: center; */
 }
 
+.links > ul{
+    display: flex;
+    width: 100%;
+}
 
-
+.links > .right-side{
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+.links > .left-side{
+    justify-content: flex-start;
+    min-width: 30%;
+    /* order: 1; */
+}
 
