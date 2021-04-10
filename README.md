@@ -1,2 +1,2 @@
-# GoogleClone
+# GoogleSearchClone
 Frontend Practice
