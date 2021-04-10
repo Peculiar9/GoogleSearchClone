@@ -20,19 +20,20 @@ nav{
 ul.nav-items{
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 
 ul.nav-items li{
-    padding-right: 1em;
+    padding: 1em;
     font-size: 14px;
     list-style: none;
-    color: rgba(0,0,0,0.87);;
+    /* color: rgba(0,0,0,0.87);; */
 }
- 
+
 ul.nav-items a{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 ul.nav-items a:hover{
@@ -53,7 +54,23 @@ ul.nav-items a:hover{
     justify-content: center;
     margin-bottom: 2em;
 }
-
+.dots{
+    padding: 1em;
+    color: grey;
+}
+.fab:hover{
+   box-shadow: 1px 1px 20px rgb(228, 228, 228);
+   border-radius: 50%;
+}
+.fab{
+    color: #fd6a02;
+    font-size: 2em;
+}
+.dots:hover{
+    border-radius: 50%;
+    background: rgb(223, 223, 223);
+    /* padding: 1em; */
+}
 .body > .search-bar{
     display:flex;
     flex-wrap: none;
@@ -61,7 +78,7 @@ ul.nav-items a:hover{
     justify-content: space-between;
     background: transparent;
     width: 100%;
-    min-width: 50vw;
+    min-width: 40vw;
     border: 1px solid rgba(209, 209, 209, .4);
     padding: 1rem;
     border-radius: 3rem;
